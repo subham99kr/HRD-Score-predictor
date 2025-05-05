@@ -85,19 +85,16 @@ Visit `http://127.0.0.1:8000` in your browser.
 
 ## 📊 Example Images
 
-> Add these in a `/images` folder:
-
-* **Raw Input**: `raw_image.png`
-* **Annotated**: `annotated.png`
-* **Model Output**: `sample_output.png`
+* **Raw Input**: `Sample_Raw.png`
+* **Annotated**: `Sample_annotation.png`
+* **Model Output**: `Sample_output.png`
 * **Confusion Matrix**: `confusion_matrix.png`
-* **HR Score Table**: `hr_score_table.png`
 
 ```markdown
-![Raw Input](images/raw_image.png)
-![Annotated](images/annotated.png)
-![Detection Output](images/sample_output.png)
-![Confusion Matrix](images/confusion_matrix.png)
+![Raw Input](dataset_sample/Sample_Raw.png)
+![Annotated](dataset_sample/Sample_annotation.png)
+![Detection Output](train_logs/Sample_output.png)
+![Confusion Matrix](train_logs/confusion_matrix.png)
 ```
 
 ---
@@ -112,7 +109,7 @@ Visit `http://127.0.0.1:8000` in your browser.
 
 ## 📌 Limitations
 
-* Low recall for RAD51+ due to small object size
+* Low recall for G2 due to small object size
 * Only 45 images used for training
 * Needs real clinical validation
 
@@ -138,9 +135,9 @@ Visit `http://127.0.0.1:8000` in your browser.
 
 Final Year B.Tech (EE), IIT (ISM) Dhanbad:
 
+* **Subham Kumar (21JE0947)**
 * Ayush Chauhan (20JE0230)
 * Siddhant Jha (21JE0917)
-* **Subham Kumar (21JE0947)**
 * Supriya Kumari (21JE0970)
 * Surbhi Kumari (21JE0973)
 
@@ -150,8 +147,7 @@ Final Year B.Tech (EE), IIT (ISM) Dhanbad:
 
 ## 📄 Report & Poster
 
-* [Final Report - reportV2.pdf](./reportV2.pdf)
-* \[Poster or Infographic - *Add project\_poster.png*]
+* [Final Report](https://drive.google.com/file/d/1ooyxb8_HnUuxbQamZZd9kJCbF32uv9HG/view?usp=drive_link)
 
 ---
 
