@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HRD Score Prediction</title>
+</head>
+<body>
+  <h2>Upload Microscopy Image</h2>
+  <input type="file" id="fileInput">
+  <button onclick="uploadImage()">Predict</button>
+  <br><br>
+  <div id="results"></div>
+  <img id="outputImage" style="max-width: 500px;">
+
+  <script>
+    async function uploadImage() {
+      const file = document.getElementById("fileInput").files[0];
+      const formData = new FormData();
+      formData.append("file", file);
+
+      const response = await fetch("http://127.0.0.1:8000/predict", {
+        method: "POST",
+        body: formData
+      });
+
+      const imgBlob = await response.blob();
+      const imgUrl = URL.createObjectURL(imgBlob);
+
+      // Show image
+      document.getElementById("outputImage").src = imgUrl;
+
+      // Show HR results
+      const g2 = response.headers.get("G2-Count");
+      const rad51 = response.headers.get("RAD51-Count");
+      const hr = response.headers.get("HR-Score");
+
+      document.getElementById("results").innerHTML = `
+        <p><strong>G2 Cells:</strong> ${g2}</p>
+        <p><strong>RAD51 Foci:</strong> ${rad51}</p>
+        <p><strong>HR Score:</strong> ${hr}</p>
+      `;
+    }
+  </script>
+</body>
+</html>
