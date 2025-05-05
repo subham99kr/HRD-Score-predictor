@@ -86,8 +86,8 @@ Visit `http://127.0.0.1:8000` in your browser.
 | Architecture    | YOLOv8s |
 | Epochs          | 240     |
 | Optimizer       | AdamW   |
-| mAP\@0.5        | 0.32    |
-| Precision       | \~50%   |
+| mAP\@0.5        | 0.42    |
+| Precision       | \~66%   |
 | Annotation Tool | Napari  |
 
 ---
