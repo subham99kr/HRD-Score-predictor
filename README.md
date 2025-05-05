@@ -93,12 +93,26 @@ Visit `http://127.0.0.1:8000` in your browser.
 ---
 ## 📊 Example Images
 
-<p float="left">
-  <img src="dataset_sample/Sample_Raw.png" alt="Raw Input" width="220"/>
-  <img src="dataset_sample/Sample_annotation.png" alt="Annotated" width="220"/>
-  <img src="dataset_sample/Sample_output.png" alt="Model Output" width="220"/>
-  <img src="train_logs/confusion_matrix.png" alt="Confusion Matrix" width="220"/>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="dataset_sample/Sample_Raw.png" width="400"/>
+      <br><sub><b>Raw Input</b></sub>
+    </td>
+    <td align="center">
+      <img src="dataset_sample/Sample_annotation.png" width="400"/>
+      <br><sub><b>Annotated Image</b></sub>
+    </td>
+    <td align="center">
+      <img src="dataset_sample/Sample_output.png" width="400"/>
+      <br><sub><b>Model Output</b></sub>
+    </td>
+    <td align="center">
+      <img src="train_logs/confusion_matrix.png" width="400"/>
+      <br><sub><b>Confusion Matrix</b></sub>
+    </td>
+  </tr>
+</table>
 
 
 ---
