@@ -26,18 +26,27 @@ Homologous recombination deficiency (HRD) is a crucial biomarker used to determi
 ## 📁 Directory Structure
 
 ```
-HRD-Score-predictor/
-├── app/
-│   ├── app.py                # FastAPI backend
-│   ├── index.html            # Frontend UI
-│   ├── best.pt               # YOLOv8 trained model
-│   └── static/               # Stylesheets and JS
-├── train_logs/               # Training metrics
-├── results/                  # Output samples
-├── images/                   # Visual examples (for README)
-├── reportV2.pdf              # Project report
-├── requirements.txt          # Python dependencies
-└── README.md                 # Project README
+📁 hrd-score-predictor/
+├── 📁 app/                      # Backend (FastAPI + YOLOv8)
+│   ├── app.py                  # FastAPI code
+│   ├── requirements.txt        # Python dependencies
+│   ├── best.pt                 # YOLOv8 best model
+│   ├── last.pt                 # (Optional) last checkpoint
+│   └── Dockerfile              # Docker build file
+│
+├── 📁 frontend/                 # Optional: frontend (HTML/JS)
+│   └── index.html              # Upload + display form
+│
+├── 📁 train_logs/              # YOLO training metrics
+│   ├── results.png             # mAP, loss curves
+│   ├── confusion_matrix.png    # Confusion matrix 
+│   ├── metrics.csv             # Raw logs 
+│   
+├── 📁 dataset_sample/          # Sample test image(s) 
+│   └── test_image_1.png
+│
+├── .gitignore
+├── README.md                   # Full project description
 ```
 
 ---
@@ -90,12 +99,12 @@ Visit `http://127.0.0.1:8000` in your browser.
 * **Model Output**: `Sample_output.png`
 * **Confusion Matrix**: `confusion_matrix.png`
 
-```markdown
+
 ![Raw Input](dataset_sample/Sample_Raw.png)
 ![Annotated](dataset_sample/Sample_annotation.png)
 ![Detection Output](train_logs/Sample_output.png)
 ![Confusion Matrix](train_logs/confusion_matrix.png)
-```
+
 
 ---
 
