@@ -91,19 +91,14 @@ Visit `http://127.0.0.1:8000` in your browser.
 | Annotation Tool | Napari  |
 
 ---
-
 ## 📊 Example Images
 
-* **Raw Input**: `Sample_Raw.png`
-* **Annotated**: `Sample_annotation.png`
-* **Model Output**: `Sample_output.png`
-* **Confusion Matrix**: `confusion_matrix.png`
-
-
-![Raw Input](dataset_sample/Sample_Raw.png)
-![Annotated](dataset_sample/Sample_annotation.png)
-![Detection Output](train_logs/Sample_output.png)
-![Confusion Matrix](train_logs/confusion_matrix.png)
+<p float="left">
+  <img src="dataset_sample/Sample_Raw.png" alt="Raw Input" width="220"/>
+  <img src="dataset_sample/Sample_annotation.png" alt="Annotated" width="220"/>
+  <img src="dataset_sample/Sample_output.png" alt="Model Output" width="220"/>
+  <img src="train_logs/confusion_matrix.png" alt="Confusion Matrix" width="220"/>
+</p>
 
 
 ---
