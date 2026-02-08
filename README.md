@@ -8,14 +8,16 @@ This project provides an AI-driven tool to automate the prediction of Homologous
 
 ## 📈 Abstract
 
-Homologous recombination deficiency (HRD) is a crucial biomarker used to determine the effectiveness of platinum-based chemotherapy. Traditional HRD scoring is labor-intensive and prone to variability. We propose a deep learning-based method using YOLOv8 to detect RAD51+ and G2-phase nuclei from cell images and compute the HR score automatically.
+Homologous recombination deficiency (HRD) is a crucial genomic biomarker used to determine tumor sensitivity to platinum-based chemotherapy. Traditional HRD scoring involves manual fluorescence microscopy evaluation, which is labor-intensive, subjective, and prone to inter-observer variability.
+
+We propose a deep learning-based pipeline that uses YOLOv8 with SAHI slicing to detect nuclei candidates and a hybrid CNN feature fusion model to classify nuclei into Cancer or G2-phase using both image features and biological markers. The system enables automated, reproducible HRD-related cellular phenotype analysis from fluorescence microscopy images.
 
 ---
 
 ## ⚙️ Tech Stack
 
 * **Backend**: FastAPI
-* **Frontend**: HTML, JavaScript
+* **Frontend**: Streamlit
 * **Model**: YOLOv8 (Ultralytics)
 * **Libraries**: PyTorch, OpenCV, NumPy, Pillow
 * **Annotation Tool**: Napari
@@ -28,6 +30,8 @@ Homologous recombination deficiency (HRD) is a crucial biomarker used to determi
 ```
 📁 hrd-score-predictor/
 ├── 📁 app/                      # Backend (FastAPI + YOLOv8)
+|   📁 hrd-score-predictor/
+|    📁 app/  
 │   ├── app.py                  # FastAPI code
 │   ├── requirements.txt        # Python dependencies
 │   ├── best.pt                 # YOLOv8 best model
