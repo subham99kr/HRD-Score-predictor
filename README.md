@@ -68,18 +68,14 @@ hrd-score-predictor/
 ```
 
 
-
-````
----
-
-## How to Run Locally
+## How to Run Locally 💻
 
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/subham99kr/HRD-Score-predictor.git
 cd HRD-Score-predictor/app
-````
+```
 
 ### 2. Create Environment and Install Dependencies
 
@@ -87,8 +83,8 @@ cd HRD-Score-predictor/app
 conda create -n hrd-env python=3.10
 conda activate hrd-env
 
-pip install -r requirements.txt
-pip install -r Dashboard/requirements.txt
+pip install -r requirements.txt  # backend
+pip install -r Dashboard/requirements.txt # dashboard
 ```
 
 ### 3. Run the Backend API
