@@ -1,4 +1,4 @@
-# HRD-related cellular phenotype prediction 🔬
+# HRD cellular phenotype prediction 🔬
 
 **AI-based Detection and Classification of HRD-related Cellular Phenotypes in Ovarian Cancer**
 
